@@ -6,7 +6,7 @@ body {
 	background-color: rgb(249, 249, 249); /* Not totally white. */
 	color: rgb(2, 2, 2);  /* Not totally black. */
 	line-height: 140%; 	/* A little extra leading. */
-	font-family: sans-serif;
+	font-family: sans-serif:
 }
 
 h1 {
