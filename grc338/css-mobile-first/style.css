@@ -1,0 +1,66 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+figcaption{
+    font-style:italic;
+    margin: 1.5em;
+}
+body {
+	background-color: rgb(249, 249, 249); /* Not totally white. */
+	color: rgb(2, 2, 2);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: sans-serif;
+}
+h1 {
+	background-color: rgb(255,140,0);
+	color: rgb(249, 249, 249); /* Same as body background. */
+	font-size:20pt;
+	padding: 1em 0.5em 1em; /* You want three values. */
+	font-weight: bold;
+	text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height:1.6;
+}
+h2 {
+	background-color: rgb(255,140,0);
+	color:rgb(237,232,208);
+	font-size: 18pt;
+	padding: 0em .5em 1em;
+	font-family: serif;
+	font-weight:lighter;
+}
+h3 {
+	margin: 1em 1em 1em; /*Three values again. You got the idea.*/
+	padding-top: 1.5em;
+	font-size: 15pt;
+	color: rgb(255,140,0);
+	font-weight: lighter;
+	text-transform:uppercase;
+	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    font-family:serif;
+}
+ul {
+	margin: .5em 1em 1em 2em;
+    line-height:2;
+}
+
+ol {
+	padding: .5em 1em 1em 2em;
+    line-height:2;
+
+}
+li { 
+	padding: 0em,0em,0em,1em;
+    font-size: 11pt;
+}
+p{
+    background-color: rgb(255,140,0);
+    color:rgb(249, 249, 249);
+    padding: 1em
+}
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
