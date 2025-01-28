@@ -22,7 +22,6 @@ h1 {
 	font-size:20pt;
 	padding: 1em 0.5em 1em; /* You want three values. */
 	font-weight: bold;
-	text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height:1.6;
 }
