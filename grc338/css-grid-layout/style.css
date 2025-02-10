@@ -1,0 +1,84 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+figure {
+    display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	margin-bottom:2em;
+}
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+	 grid-column:1 / span 3;
+}
+figcaption{
+    font-style:italic;
+    margin: 1em 1em 1em;
+	grid-column:4/4;
+}
+body {
+	background-color:rgb(220,220,220); /* Not totally white. */
+	color: rgb(2, 2, 2);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: sans-serif;
+}
+h1 {
+	background-color: rgb(255,140,0);
+	color: rgb(249, 249, 249); /* Same as body background. */
+	font-size:2.5em;
+	padding: 1.5em 0.5em 0em; /* You want three values. */
+	font-weight: bold;
+    font-family: serif;
+    line-height:1.6;
+}
+h2 {
+	background-color: rgb(255,140,0);
+	color:rgb(237,232,208);
+	font-size: 2em;
+	padding: .5em 0.5em 1em;
+	font-family: serif;
+	font-weight:lighter;
+}
+h3 {
+	margin: 1em 1em 0em; /*Three values again. You got the idea.*/
+	font-size: 2em;
+	color: rgb(255,140,0);
+	font-weight: lighter;
+	text-transform:uppercase;
+	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    font-family:serif;
+	border-top: 2px solid rgb(255,140,0);
+	line-height: 2em;
+}
+ul {
+	margin: .5em 1em 1em 3em;
+    line-height:2;
+}
+
+ol {
+	padding: .5em 3em 1em 2em;
+    line-height:2;
+
+}
+li { 
+	padding: 0em,0em,0em,1em;
+    font-size: 1em;
+}
+p{
+    background-color: rgb(255,140,0);
+    color:rgb(249, 249, 249);
+    padding: 1em
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 3em;
+	margin-bottom: 4em;
+}
+div.container{
+	max-width:60em;
+	margin:auto;
+	background-color: rgb(249,249,249);
+}
