@@ -1,0 +1,192 @@
+/*CSS DOCUMENT*/	
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(Storefront1.jpg) center center fixed;
+	max-width: 75em;
+	position: relative;
+	min-height: 100vh;
+	margin:auto;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(249,249,249);
+	max-width:75em;
+	margin:auto;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 1em 1em 5em;
+	}
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 12em auto;
+	background: rgb(249,249,249);
+	padding: 1em .5em;
+	}
+	h1 {
+		max-width: 12em;
+		}
+	
+	h2, h3, h4 {
+			font-weight:bold;
+			font-family: "casablanca-urw", sans-serif;
+			font-weight:500;
+		}
+	
+	h2 {
+		font-size: 2.5em;
+		margin: 0em .25em .5em;
+		text-align:center;
+		color: rgb(255, 140, 0);
+		}
+		
+	h3 {
+		font-size: 1.5em;
+		margin:1em 0em .5em;
+		color: rgb(89, 185, 164);
+		border-bottom: 2px solid rgb(89, 185, 164);
+	}
+	h4 {
+		grid-row: 1;
+		font-weight: bold;
+	}
+body {
+		font-family: sans-serif;
+		background-color:rgb(89, 185, 164);
+		}
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align:right;
+	margin: 1.5em 1em 0em;
+	font-size:1.25em;
+	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1.5em;
+}
+
+main.menu ul {
+		margin: 1em 0em;
+}	
+
+main.menu ul li {
+		margin: 1em .5em 0em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+}	
+
+p {
+	margin: 1em 0em 0em;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height:1.5em;
+	}
+	
+	p.description {
+		grid-column: 1 / span 2;
+		grid-row: 2;
+		margin: 0.5em 0;
+	}
+
+	p.price {
+		grid-row: 1;
+		grid-column: 2;
+		color: rgb(255, 140, 0);
+		text-align: right;
+	}
+	
+	
+	nav ul li {
+		text-transform: uppercase;
+		font-family: "casablanca-urw", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		margin-bottom: 1em;
+	}
+	
+nav ul li:hover{
+	text-decoration:underline;
+	color:rgb(7, 87, 150);
+
+}
+nav ul li a {
+	color:rgb(7, 87, 150);
+	padding: .5em .5em .5em;
+	margin:.5em .5em .5em; 
+	}
+nav ul li.selected a {
+color: rgb(255,140,0);
+text-decoration: underline;
+}
+nav ul li.selected a:hover {
+	text-decoration:underline;
+}
+p.slogan {
+    font-size: 4em;
+    font-family: "filmotype-lasalle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0em 0.5em 2em;
+    color: rgb(249,249,249);
+    text-align: center;
+}
+article{
+	max-width: 45em;
+	margin:auto;
+}	
+footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 1em;
+  background: rgb(249,249,249);
+  margin: 2em 0em 0em;
+  font-family: sans-serif;
+}
+
+address {
+	color: rgb(89, 185, 164);
+	line-height: 1.4em;
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (min-width: 50em){
+	nav {
+		margin: auto 0;
+	}
+	nav ul li{
+		display: inline-block;
+	}	
+	main.menu ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 0em 2em; 
+    }
+}
